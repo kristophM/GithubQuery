@@ -12,10 +12,13 @@ class User {
     //Properties
     var username: String!
     var avatarURL: NSURL?
-    var id: String!
-    var score: Double!
+    var id: Int!
+    var score: Double?
+    var name: String?
+    var bio: String?
+    var company: String?
     
-    init(username: String, avatarURL: NSURL?, id: String, score: Double) {
+    init(username: String, avatarURL: NSURL?, id: Int, score: Double) {
         self.username = username
         self.avatarURL = avatarURL
         self.id = id
@@ -27,8 +30,17 @@ class User {
         if let avatarURLString = json["avatar_url"] as? String {
             self.avatarURL = NSURL(string: avatarURLString)!
         }
-        self.id = json["id"] as! String
-        self.score = json["score"] as! Double 
+        self.id = json["id"] as! Int
+        self.score = json["score"] as? Double
+        if let name = json["name"] as? String {
+            self.name = name
+        }
+        if let bio = json["bio"] as? String {
+            self.bio = bio
+        }
+        if let company = json["company"] as? String {
+            self.company = company
+        }
     }
 }
 
