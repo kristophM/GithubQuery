@@ -14,6 +14,8 @@
 		D70EEF9A1E21570B003D1320 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D70EEF981E21570B003D1320 /* LaunchScreen.storyboard */; };
 		D70EEFA51E21570B003D1320 /* GithubQueryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70EEFA41E21570B003D1320 /* GithubQueryTests.swift */; };
 		D70EEFB01E21570B003D1320 /* GithubQueryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70EEFAF1E21570B003D1320 /* GithubQueryUITests.swift */; };
+		D70EEFBE1E215759003D1320 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70EEFBD1E215759003D1320 /* SearchViewController.swift */; };
+		D70EEFC11E215856003D1320 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70EEFC01E215856003D1320 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D70EEFAB1E21570B003D1320 /* GithubQueryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubQueryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D70EEFAF1E21570B003D1320 /* GithubQueryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubQueryUITests.swift; sourceTree = "<group>"; };
 		D70EEFB11E21570B003D1320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D70EEFBD1E215759003D1320 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D70EEFC01E215856003D1320 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				D70EEF8F1E21570B003D1320 /* AppDelegate.swift */,
 				D70EEF911E21570B003D1320 /* ViewController.swift */,
 				D70EEF931E21570B003D1320 /* Main.storyboard */,
+				D70EEFC01E215856003D1320 /* User.swift */,
+				D70EEFBF1E215764003D1320 /* Controllers */,
 				D70EEF961E21570B003D1320 /* Assets.xcassets */,
 				D70EEF981E21570B003D1320 /* LaunchScreen.storyboard */,
 				D70EEF9B1E21570B003D1320 /* Info.plist */,
@@ -123,6 +129,14 @@
 				D70EEFB11E21570B003D1320 /* Info.plist */,
 			);
 			path = GithubQueryUITests;
+			sourceTree = "<group>";
+		};
+		D70EEFBF1E215764003D1320 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D70EEFBD1E215759003D1320 /* SearchViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D70EEFC11E215856003D1320 /* User.swift in Sources */,
+				D70EEFBE1E215759003D1320 /* SearchViewController.swift in Sources */,
 				D70EEF921E21570B003D1320 /* ViewController.swift in Sources */,
 				D70EEF901E21570B003D1320 /* AppDelegate.swift in Sources */,
 			);
